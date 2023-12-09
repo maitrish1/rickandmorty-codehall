@@ -58,7 +58,6 @@ const CharacterPage: React.FC<CharacterPageProps> = ({ params }) => {
         <Typography variant="body1">Species: {characterData?.species}</Typography>
         <Typography variant="body1">Gender: {characterData?.gender}</Typography>
         <Typography variant="body1">Origin: {characterData?.origin.name}</Typography>
-        <Typography variant="body1">Location: {characterData?.location.name}</Typography>
         {locationData && (
           <>
             <Typography variant="body1">Location Name: {locationData.name}</Typography>

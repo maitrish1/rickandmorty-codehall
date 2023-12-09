@@ -37,10 +37,10 @@ const CharacterComponent: React.FC = () => {
 
   if (isLoading) {
     return (
-      <Grid container mt={-8}>
+      <Grid container mt={-3.3} pl={12}>
         {Array.from({ length: 12 }).map((_, index) => (
-          <Grid item xs={12} sm={6} md={2} lg={2} key={index}>
-            <Skeleton width={200} height={500} />
+          <Grid item xs={12} sm={12} md={3} lg={2} key={index}>
+            <Skeleton width={200} height={550} />
           </Grid>
         ))}
       </Grid>
@@ -91,11 +91,11 @@ const CharacterComponent: React.FC = () => {
             {characters.map(
               (character) =>
                 character && (
-                  <Grid px={4} display='flex' alignItems='center' justifyContent='center'
+                  <Grid display='flex' alignItems='center' justifyContent='center'
                     xs={12}
                     sm={12}
-                    md={4}
-                    lg={3}
+                    md={3}
+                    lg={2}
                     key={character.id}
                     onClick={() => handleCharacterClick(character.id)}
                   >
