@@ -18,3 +18,28 @@ export type Character = {
     url: string;
     created: string;
   };
+
+  export type Debounce ={
+    value:string,
+    delay:number
+  }
+
+  export type ApiResponse<T> = {
+    info: {
+      count: number;
+      pages: number;
+      next: string;
+      prev: string;
+    };
+    results: T[];
+  };
+
+  export type LocationData = {
+    id: number;
+    name: string;
+    type: string;
+    dimension: string;
+    residents: string[];
+    url: string;
+    created: string;
+  };
